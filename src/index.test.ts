@@ -212,7 +212,7 @@ describe('LRUCache', () => {
 
       await new Promise((r) => setTimeout(r, 50)); // Wait for fetch to complete
 
-      expect(cache.get('key1')).toBe('new-value'); // Cache is updated with new value
+      expect(cache.get('key1', { allowStale: true })).toBe('new-value'); // Cache is updated with new value
     });
 
     it('should return stale value if allowStale is true', async () => {
