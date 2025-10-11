@@ -121,9 +121,9 @@ For all configuration options, please see [the API docs](https://www.jsdocs.io/p
 
 | Library         | SET ops/sec  | GET ops/sec  | UPDATE ops/sec | DELETE ops/sec |
 | --------------- | ------------ | ------------ | -------------- | -------------- |
-| **@se-oss/lru** | 8,114,097    | 17,025,882   | 15,652,000     | 31,312,221     |
+| **@se-oss/lru** | 8,114,097    | 17,025,882   | 15,652,000     | _31,312,221_   |
 | tiny-lru        | 3,852,093    | _28,034,336_ | _26,054,100_   | 17,988,030     |
-| lru-cache       | 9,556,046    | 18,433,743   | 17,211,778     | _30,403,130_   |
+| lru-cache       | 9,556,046    | 18,433,743   | 17,211,778     | 30,403,130     |
 | quick-lru       | _15,562,323_ | 10,461,517   | 15,029,425     | 28,062,475     |
 
 _Benchmark script: [`src/index.bench.ts`](src/index.bench.ts)_
