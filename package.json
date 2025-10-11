@@ -1,6 +1,6 @@
 {
   "name": "@se-oss/lru",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A feature-rich LRU cache engineered for high performance, offering excellent throughput on par with industry-standard libraries.",
   "keywords": [
     "lru",
