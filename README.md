@@ -13,7 +13,6 @@ _@se-oss/lru_ is a feature-rich LRU cache engineered for high performance, offer
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Documentation](#-documentation)
-- [Performance](#-performance)
 - [Contributing](#-contributing)
 - [License](#license)
 
@@ -116,19 +115,6 @@ getData('user-profile'); // Returns from cache
 ## 📚 Documentation
 
 For all configuration options, please see [the API docs](https://www.jsdocs.io/package/@se-oss/lru).
-
-## 🚀 Performance
-
-| Library         | SET ops/sec  | GET ops/sec  | UPDATE ops/sec | DELETE ops/sec |
-| --------------- | ------------ | ------------ | -------------- | -------------- |
-| **@se-oss/lru** | 8,283,012    | 17,011,923   | 15,848,670     | _31,051,192_   |
-| tiny-lru        | 3,804,727    | _27,954,423_ | _26,658,547_   | 18,273,447     |
-| lru-cache       | 9,466,302    | 17,964,613   | 17,062,288     | 30,668,986     |
-| quick-lru       | _14,928,443_ | 10,391,375   | 15,257,320     | 26,669,894     |
-
-_Benchmark script: [`src/index.bench.ts`](src/index.bench.ts)_
-
-**Note on `tiny-lru`**: The impressive `GET` and `UPDATE` performance of `tiny-lru` is largely due to its minimalist design. It is a raw LRU implementation and lacks many of the advanced features (like `fetch`, size-based eviction, and detailed callbacks) found in `@se-oss/lru` and `lru-cache`. This results in lower overhead for basic operations.
 
 ## 🤝 Contributing
 
