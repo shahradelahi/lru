@@ -5,6 +5,6 @@ export default defineConfig({
     environment: 'node',
     testTimeout: 20000,
     globals: true,
-    exclude: ['**/node_modules/**', '**/dist/**', '**/examples-DONT_REMOVE/**'],
+    exclude: ['**/node_modules/**', '**/dist/**', '**/bench/**'],
   },
 });

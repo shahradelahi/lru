@@ -126,7 +126,7 @@ For all configuration options, please see [the API docs](https://www.jsdocs.io/p
 | lru-cache       | 9,466,302    | 17,964,613   | 17,062,288     | 30,668,986     |
 | quick-lru       | _14,928,443_ | 10,391,375   | 15,257,320     | 26,669,894     |
 
-_Benchmark script: [`src/index.bench.ts`](src/index.bench.ts)_
+_Benchmark script: [`bench/index.bench.ts`](bench/index.bench.ts)_
 
 **Note on `tiny-lru`**: The impressive `GET` and `UPDATE` performance of `tiny-lru` is largely due to its minimalist design. It is a raw LRU implementation and lacks many of the advanced features (like `fetch`, size-based eviction, and detailed callbacks) found in `@se-oss/lru` and `lru-cache`. This results in lower overhead for basic operations.
 

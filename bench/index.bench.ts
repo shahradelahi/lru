@@ -1,9 +1,8 @@
+import { LRUCache as OurLRUCache } from '@se-oss/lru';
 import { LRUCache as LruCache } from 'lru-cache';
 import QuickLRU from 'quick-lru';
 import { lru as TinyLRU } from 'tiny-lru';
 import { bench, describe } from 'vitest';
-
-import { LRUCache as OurLRUCache } from './index';
 
 const max = 1000;
 

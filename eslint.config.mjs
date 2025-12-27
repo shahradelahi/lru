@@ -3,9 +3,8 @@ import globals from 'globals';
 
 export default defineConfig(
   {
-    ignores: ['dist/**', 'examples-DONT_REMOVE/**'],
+    ignores: ['dist/**', 'bench/**'],
   },
-
   {
     languageOptions: {
       ecmaVersion: 'latest',
